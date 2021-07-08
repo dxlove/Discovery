@@ -3,42 +3,18 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <artifactId>discovery-plugin-admin-center</artifactId>
     <name>Nepxion Discovery Plugin Admin Center</name>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
     <modelVersion>4.0.0</modelVersion>
-    <description>Nepxion Discovery is an enhancement for Spring Cloud Discovery</description>
+    <description>Nepxion Discovery is a solution for Spring Cloud with blue green, gray, weight, limitation, circuit breaker, degrade, isolation, monitor, tracing, dye, failover, async agent</description>
     <url>http://www.nepxion.com</url>
 
     <parent>
         <groupId>com.nepxion</groupId>
         <artifactId>discovery</artifactId>
-        <version>5.1.1</version>
+        <version>7.0.0-SNAPSHOT</version>
     </parent>
 
-    <dependencies>
-        <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>discovery-plugin-framework</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-webmvc</artifactId>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger2</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger-ui</artifactId>
-        </dependency>
-    </dependencies>
+    <modules>
+        <module>discovery-plugin-admin-center-starter</module>
+    </modules>
 </project>
